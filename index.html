@@ -11,12 +11,94 @@
     <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-    <header>
-      <ul>
-        <li>ROCK</li>
-        <li>PAPER</li>
-        <li>SCISSORS</li>
-      </ul>
-    </header>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="rules">
+        <div class="space">
+          <h3>RULES</h3>
+          <img class="close" src="images/icon-close.svg" alt="" />
+        </div>
+        <div class="image">
+          <img src="images/image-rules.svg" alt="" />
+        </div>
+      </div>
+      <header>
+        <img class="logo" src="images/logo.svg" alt="" />
+
+        <div class="scoreBoard">
+          <p class="scoreText">SCORE</p>
+          <p id="score">0</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="init">
+          <div class="top">
+            <div class="paper PA">
+              <div class="innerBorder">
+                <img src="images/icon-paper.svg" alt="" />
+              </div>
+            </div>
+            <div class="scissors SC">
+              <div class="innerBorder">
+                <img src="images/icon-scissors.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="rock RK">
+              <div class="innerBorder">
+                <img src="images/icon-rock.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <img class="triangle" src="images/bg-triangle.svg" alt="" />
+        </div>
+      </main>
+      <section class="after">
+        <div class="space">
+          <div class="player">
+            <p>YOU PICKED</p>
+            <div class="image">
+              <div class="outerBorder">
+                <div class="innerBorder">
+                  <div class="img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mid">
+            <p class="result"></p>
+            <button class="playAgain">PLAY AGAIN</button>
+          </div>
+          <div class="computer">
+            <p>THE HOUSE PICKED</p>
+            <div class="empty"></div>
+            <div class="image">
+              <div class="outerBorderComp">
+                <div class="innerBorder"><div class="img"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mid under">
+          <p class="result"></p>
+          <button class="playAgain">PLAY AGAIN</button>
+        </div>
+        <div class="player-win">
+          <div class="wave-1 active-1"></div>
+          <div class="wave-2 active-2"></div>
+          <div class="wave-3 active-3"></div>
+        </div>
+        <div class="comp-win">
+          <div class="wave-1 active-1"></div>
+          <div class="wave-2 active-2"></div>
+          <div class="wave-3 active-3"></div>
+        </div>
+      </section>
+      <button class="button">RULES</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
